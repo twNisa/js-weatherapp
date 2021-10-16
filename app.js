@@ -17,6 +17,8 @@ document.querySelector("#btn-change").addEventListener("click", (e) => {
   // set local storage
   storage.setLocation(city);
   getWeather();
+  document.querySelector("#city").value = "";
+
 });
 
 function getWeather(){

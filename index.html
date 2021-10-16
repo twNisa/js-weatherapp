@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <title>Weather JS</title>
+  <style>
+    ul{
+      list-style: none;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="u-full-width">
+      <h1>Weather JS using OpenWeatherMap API</h1>
+    </div>
+    <div id="location"></div>
+
+    <div id="weatherDescri"></div>
+    <div id="temp"></div>
+    <img id="weatherIcon">
+      
+
+    <ul class="listGroup" id="details">
+      <li class="listGroup-item" id="humidity"></li>
+      <li class="listGroup-item" id="feelsLike"></li>
+      
+      <li class="listGroup-item" id="wind"></li>
+      <li class="listGroup-item" id="clouds"></li>
+    </ul>
+    <hr>
+    <label for="city">City:</label>
+    <input type="text" id="city">
+
+    <button id="btn-change">
+      Get Location
+    </button>
+
+  </div>
+
+
+
+  <script src="weather.js"></script>
+  <script src="storage.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
